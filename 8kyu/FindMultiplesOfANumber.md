@@ -1,4 +1,4 @@
-# findMultiples
+# FindMultiplesOfANumber
 
 ### Solution:
 
