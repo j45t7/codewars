@@ -1,0 +1,20 @@
+# Longest vowel chain
+
+### Solution:
+
+```
+function solve(s){
+  let count = 0, res = 0 
+  let str = s.split('')
+  
+  for(let i = 0; i < str.length; i++){
+    if('aiueo'.includes(str[i])){
+      count++
+    } else {
+      res = Math.max(res, count)
+      count = 0
+    }
+  }
+ return Math.max(res, count);
+}
+```
